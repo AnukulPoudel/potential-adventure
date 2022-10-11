@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>🎨 Etch-a-Sketch</title>
 </head>
@@ -15,9 +18,9 @@
     <div id="container">
         <div id="setting">
             <!-- color div around 10 by 10 px -->
-            <button id="color-picker"></button>
+            <input type="color" name="colorPicker" id="color-picker">
             <!-- color btn -->
-            <button class="settings">Color Mode</button>
+            <button class="settings active">Color Mode</button>
             <!-- rainbow mode -->
             <button class="settings">Rainbow Mode</button>
             <!-- eraser -->
@@ -25,6 +28,8 @@
             <!-- clear -->
             <button class="settings">Clear</button>
             <!-- horizontal scroll bar to set size of grid-item like 16x16 -->
+            <label for="form" class="size">32 x 32</label>
+            <input id="picker" type="range" min="0" max="64">
         </div>
         <div id="grid-container">
             <div class="item"></div>

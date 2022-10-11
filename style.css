@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -11,6 +12,7 @@ h1{
     text-align: center;
     font-size: 80px;
     padding: 20px;
+    padding-left: 110px;
 }
 
 #container{
@@ -38,15 +40,26 @@ h1{
     border-radius: 2px solid red;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 
 #color-picker{
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     height: 100px;
     width: 100px;
     border: 0px;
     margin-left: 25%;
+}
+
+#color-picker:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#picker{
+    -webkit-appearance: none;
+    background-color: inherit;
+    cursor: pointer;
 }
 
 .header{
@@ -61,18 +74,33 @@ h1{
 
 .settings{
     height: 40px;
-    width: 200px;
+    width: 180px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .settings:hover{
     transform: scale(1.05);
 }
 
+.active{
+    background-color: #57575d;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.size{
+    line-height: 10px;
+    margin: -5%;
+    text-align: center;
+    padding-top: 15px;
+}
 
 .item{
-    background-color: rosybrown;
+    background-color: rgb(255, 255, 255);
 }
 
 .clicked{
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
 }

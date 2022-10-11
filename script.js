@@ -4,13 +4,8 @@ let gridSize = 8;
 //create a grid of given size
 function createGridElement(){
     let gridElement = document.createElement("div");
-    gridElement.className = "item";
-    gridElement.onmousedown = ;
+    gridElement.classList.add("item");
     return gridElement;
-}
-
-function clicked(){
-    colorPicker. //needs to be completed
 }
 
 //get the .grid-container element
@@ -19,10 +14,10 @@ for (let index = 0; index < gridSize*gridSize; index++) {
     gridContainer.appendChild(createGridElement());
 }
 
-
-// when the mouse hovers above it color it using
-// document.getElementById("div1").className= "newClass";
-
-const colorPicker = document.querySelector("#color-picker");
-colorPicker.addEventListener("click",clicked());
-
+let mouseClicked = document.querySelectorAll(".item");
+for (let index = 0; index < mouseClicked.length; index++) {
+    mouseClicked[index].addEventListener("mousemove",function(){
+        mouseClicked[index].classList.add("clicked");
+    });
+    
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(247, 237, 237);
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    padding: 20px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+    padding-right: 12%;
+}
+
+#grid-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /*drops a shadow*/ 
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);  /*creates 8 columns of size 1 fraction of available space*/
+    grid-template-rows: repeat(8,1fr);
+    /* column-gap: 1em; /* gives 1 em space between each column items */
+    /* row-gap: 1em; */
+}
+
+#setting{
+    border-radius: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#color-picker{
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 100px;
+    border: 0px;
+    margin-left: 25%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 50px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.settings{
+    height: 40px;
+    width: 200px;
+}
+
+.settings:hover{
+    transform: scale(1.05);
+}
+
+
+.item{
+    background-color: rosybrown;
+}
+
+.clicked{
+    background-color: aliceblue;
+}

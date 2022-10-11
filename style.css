@@ -30,8 +30,8 @@ h1{
     width: 500px;
     background-color: aliceblue;
     display: grid;
-    grid-template-columns: repeat(8,1fr);  /*creates 8 columns of size 1 fraction of available space*/
-    grid-template-rows: repeat(8,1fr);
+    /* grid-template-columns: repeat(64,1fr);  /*creates 8 columns of size 1 fraction of available space*/
+    /* grid-template-rows: repeat(64,1fr); */
     /* column-gap: 1em; /* gives 1 em space between each column items */
     /* row-gap: 1em; */
 }
